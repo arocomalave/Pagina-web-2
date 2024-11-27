@@ -1,0 +1,152 @@
+body{
+    font-family: cursive, sans-serif;
+}
+ *{text-decoration: none;}
+
+.container{max-width: 1200px;
+margin: 0 auto;}
+
+.header{
+    background-image: url(https://external-preview.redd.it/6shwp2pEZxDuO718ZMrCFVbPlf5-NQAdXQTxOaOkMK8.jpg?auto=webp&s=11fa7144d256458bb9b39518564bbe67d86422d5);
+background-position: center bottom;
+background-repeat: no-repeat;
+background-size: cover;
+min-height: 70vh;
+align-items: center;
+display: flex;
+
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo{
+color: rgb(151546);
+font-size: 25px;
+font-weight: 800;
+
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li {
+    font-size: 18px;
+padding: 20px;
+color: hwb(234 3% 77%);
+display: block;
+font-weight: 600;
+}
+
+#menu{
+    display: none;
+}
+.menu-icono{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.header-txt{
+    text-align: center;
+}
+.header-txt h1 {
+font-size: 85px;
+color: rgb(231, 231, 238);
+text-transform: uppercase;
+margin-bottom: 20px;
+}
+.header-txt p{
+    color: rgb(230, 230, 238);
+    font-size: 16px;
+    padding: 0 250px;
+margin-bottom: 45px;
+}
+
+.btn-1{
+    display: inline-block;
+padding: 12px 45px;
+border: 1px solid #ab92cf;
+color: #bba8d3;
+font-size: 16px;
+text-transform: uppercase;
+font-weight: 600;
+}
+.btn-1:hover{
+color: rgb(1, 1, 41);
+background-color: #fffdfc;
+}
+.general{
+    padding: 50px 0;
+text-align: center;}
+
+
+h2{
+    font-size: 60px;
+text-transform: uppercase;
+color: rgb(15, 15, 46);
+}
+.txt h3 {
+font-size: 18px;
+color: rgb(15, 15, 46);
+text-transform: uppercase;
+margin-bottom: 10px;
+}
+.txt p{
+    color: rgb(151546);
+    font-size: 16px;}
+   
+.info-content{
+    text-align: center;
+}
+.info-content h2,span{
+    color: #151546;
+}
+
+
+@media(max-widht:991px){
+    .menu{padding: 30px;}
+    .menu label{display: initial;}
+.menu .navbar{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #fffdfc;
+    display: none;
+}
+.menu .navbar ul li {
+    width: 100%;
+}
+
+#menu:checked ~ .navbar{
+    display: initial;
+}
+.header{
+    min-height: 0vh;
+}
+.header-content{
+    padding: 100px 30px;
+}
+.header-txt h1 {
+    font-size: 50px;
+}
+
+.header-txt p {
+padding: 0;
+}
+}
+body{background-color: #c2c2f0;}
